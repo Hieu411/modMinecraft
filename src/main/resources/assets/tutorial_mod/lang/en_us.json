@@ -1,3 +1,7 @@
 {
-  "item.tutorial_mod.purple_diamond": "Purple Diamond"
+  "item.tutorial_mod.purple_diamond": "Purple Diamond",
+  "item.tutorial_mod.red_diamond": "Red Diamond",
+  "item.tutorial_mod.fire_sword": "Fire Sword",
+
+  "creativetab.1": "Tutorial Mod"
 }

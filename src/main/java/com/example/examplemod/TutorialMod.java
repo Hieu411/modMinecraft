@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.item.ModCreativeModTabs;
 import com.example.examplemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,8 @@ public class TutorialMod
     public TutorialMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         // Register the DeferredRegister to the mod event bus
         ModItems.register(modEventBus);
@@ -58,6 +61,11 @@ public class TutorialMod
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.PURPLE_DIAMOND);
+            event.accept(ModItems.RED_DIAMOND);
+        }
+        if (event.getTabKey()==CreativeModeTabs.COMBAT)
+        {
+            event.accept(ModItems.FIRE_SWORD);
         }
     }
 
