@@ -1,6 +1,7 @@
 package com.example.examplemod.item;
 
 import com.example.examplemod.TutorialMod;
+import com.example.examplemod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,9 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.PURPLE_DIAMOND.get());
                         pOutput.accept(ModItems.RED_DIAMOND.get());
+
+                        pOutput.accept(ModBlocks.PURPLE_DIAMOND_BLOCK.get( ));
+                        pOutput.accept(ModBlocks.RED_DIAMOND_BLOCK.get( ));
 
 //                        pOutput.accept(Items.DIAMOND);
 

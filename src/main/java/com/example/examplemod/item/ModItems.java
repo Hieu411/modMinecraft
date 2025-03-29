@@ -18,14 +18,10 @@ public class ModItems {
         public static final RegistryObject<Item> RED_DIAMOND = ITEMS.register("red_diamond",
             () ->new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> BLUE_DIAMOND = ITEMS.register("blue_diamond",
-            () ->new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> GREEN_DIAMOND = ITEMS.register("green_diamond",
-            () ->new Item(new Item.Properties()));
 
-        public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword",
-            () ->new Item(new Item.Properties()));
+//        public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword",
+//            () ->new Item(new Item.Properties()));
 
     // This is a simple item that we will register
     public static void register(IEventBus iEventBus){

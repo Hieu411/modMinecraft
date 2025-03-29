@@ -3,5 +3,8 @@
   "item.tutorial_mod.red_diamond": "Red Diamond",
   "item.tutorial_mod.fire_sword": "Fire Sword",
 
+  "block.tutorial_mod.purple_diamond_block": "Block of Purple Diamond",
+    "block.tutorial_mod.red_diamond_block": "Block of Red Diamond",
+
   "creativetab.1": "Tutorial Mod"
 }

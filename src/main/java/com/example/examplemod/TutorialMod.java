@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModCreativeModTabs;
 import com.example.examplemod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -35,6 +36,9 @@ public class TutorialMod
         // Register the DeferredRegister to the mod event bus
         ModItems.register(modEventBus);
 
+        // Register the blocks
+        ModBlocks.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -58,15 +62,15 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey()== CreativeModeTabs.INGREDIENTS)
-        {
-            event.accept(ModItems.PURPLE_DIAMOND);
-            event.accept(ModItems.RED_DIAMOND);
-        }
-        if (event.getTabKey()==CreativeModeTabs.COMBAT)
-        {
-            event.accept(ModItems.FIRE_SWORD);
-        }
+//        if(event.getTabKey()== CreativeModeTabs.INGREDIENTS)
+//        {
+//            event.accept(ModItems.PURPLE_DIAMOND);
+//            event.accept(ModItems.RED_DIAMOND);
+//        }
+//        if (event.getTabKey()==CreativeModeTabs.COMBAT)
+//        {
+//            event.accept(ModItems.FIRE_SWORD);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
